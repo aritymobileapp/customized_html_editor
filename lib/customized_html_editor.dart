@@ -9,12 +9,12 @@ export 'package:customized_html_editor/utils/options.dart';
 export 'package:customized_html_editor/utils/utils.dart' hide setState, intersperse, getRandString;
 
 export 'package:customized_html_editor/src/html_editor_unsupported.dart'
-    if (dart.library.html) 'package:html_editor_enhanced/src/html_editor_web.dart'
-    if (dart.library.io) 'package:html_editor_enhanced/src/html_editor_mobile.dart';
+    if (dart.library.html) 'package:customized_html_editor/src/html_editor_web.dart'
+    if (dart.library.io) 'package:customized_html_editor/src/html_editor_mobile.dart';
 
 export 'package:customized_html_editor/src/html_editor_controller_unsupported.dart'
-    if (dart.library.html) 'package:html_editor_enhanced/src/html_editor_controller_web.dart'
-    if (dart.library.io) 'package:html_editor_enhanced/src/html_editor_controller_mobile.dart';
+    if (dart.library.html) 'package:customized_html_editor/src/html_editor_controller_web.dart'
+    if (dart.library.io) 'package:customized_html_editor/src/html_editor_controller_mobile.dart';
 
 export 'package:customized_html_editor/utils/shims/flutter_inappwebview_fake.dart' if (dart.library.io) 'package:flutter_inappwebview/flutter_inappwebview.dart';
 

@@ -181,7 +181,7 @@ class _HtmlEditorWidgetWebState extends State<HtmlEditorWidget> {
     summernoteCallbacks = summernoteCallbacks + '}';
     var darkCSS = '';
     if ((Theme.of(widget.initBC).brightness == Brightness.dark || widget.htmlEditorOptions.darkMode == true) && widget.htmlEditorOptions.darkMode != false) {
-      darkCSS = '<link href=\"assets/packages/html_editor_enhanced/assets/summernote-lite-dark.css\" rel=\"stylesheet\">';
+      darkCSS = '<link href=\"assets/packages/customized_html_editor/assets/summernote-lite-dark.css\" rel=\"stylesheet\">';
     }
     var jsCallbacks = '';
     if (widget.callbacks != null) {
@@ -440,7 +440,7 @@ class _HtmlEditorWidgetWebState extends State<HtmlEditorWidget> {
         $jsCallbacks
       </script>
     """;
-    var filePath = 'packages/html_editor_enhanced/assets/summernote-no-plugins.html';
+    var filePath = 'packages/customized_html_editor/assets/summernote-no-plugins.html';
     if (widget.htmlEditorOptions.filePath != null) {
       filePath = widget.htmlEditorOptions.filePath!;
     }
@@ -449,9 +449,9 @@ class _HtmlEditorWidgetWebState extends State<HtmlEditorWidget> {
         .replaceFirst('<!--darkCSS-->', darkCSS)
         .replaceFirst('<!--headString-->', headString)
         .replaceFirst('<!--summernoteScripts-->', summernoteScripts)
-        .replaceFirst('"jquery.min.js"', '"assets/packages/html_editor_enhanced/assets/jquery.min.js"')
-        .replaceFirst('"summernote-lite.min.css"', '"assets/packages/html_editor_enhanced/assets/summernote-lite.min.css"')
-        .replaceFirst('"summernote-lite.min.js"', '"assets/packages/html_editor_enhanced/assets/summernote-lite.min.js"');
+        .replaceFirst('"jquery.min.js"', '"assets/packages/customized_html_editor/assets/jquery.min.js"')
+        .replaceFirst('"summernote-lite.min.css"', '"assets/packages/customized_html_editor/assets/summernote-lite.min.css"')
+        .replaceFirst('"summernote-lite.min.js"', '"assets/packages/customized_html_editor/assets/summernote-lite.min.js"');
     if (widget.callbacks != null) addJSListener(widget.callbacks!);
     final iframe = html.IFrameElement()
       ..width = MediaQuery.of(widget.initBC).size.width.toString() //'800'

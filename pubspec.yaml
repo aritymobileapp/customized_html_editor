@@ -28,14 +28,14 @@ dependencies:
   # pinned to 0.9.1 because of issues with CanvasKit in the latest versions
   pointer_interceptor: ^0.10.1+2
   # plugin to help maintain effective Dart standards
-  lints: ^5.0.0
+#  lints: ^5.0.0
   # plugin for @internal annotation
   meta: '>=1.0.0 <2.0.0'
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+#  flutter_lints: ^5.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
